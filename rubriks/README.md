@@ -17,6 +17,7 @@ This project focuses on clean UI, smooth date interactions, and modular componen
 
 ## 📁 Project Structure
 
+```
 rubriks/
 └── src
 ├── App.css
@@ -27,6 +28,7 @@ rubriks/
 │ └── DateComponent.tsx
 ├── index.css
 └── main.tsx
+```
 
 ---
 
