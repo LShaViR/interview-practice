@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+# Rubriks Frontend Calendar 🗓️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive and minimal **calendar-like application** built with **React**, **TypeScript**, and **Tailwind CSS**.  
+This project focuses on clean UI, smooth date interactions, and modular components using modern frontend tooling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 Tech Stack
 
-## React Compiler
+- **React** – Core library for building the UI
+- **TypeScript** – Static typing for safer, more maintainable code
+- **Tailwind CSS** – Utility-first CSS framework for fast and responsive styling
+- **date-fns** – Lightweight date formatting and manipulation
+- **Floating UI** – Portal and tooltip positioning for dynamic components
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+rubriks/
+└── src
+├── App.css
+├── App.tsx
+├── assets/
+│ └── react.svg
+├── component/
+│ └── DateComponent.tsx
+├── index.css
+└── main.tsx
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Key Files
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **App.tsx** – Root component managing the app structure
+- **DateComponent.tsx** – Core UI for calendar and date display
+- **index.css / App.css** – Global and component-level styles
+- **main.tsx** – Application entry point
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧩 Features
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Interactive calendar with date navigation
+- Modular and type-safe React components
+- Clean separation of logic and presentation
+- Portal-based UI elements managed with Floating UI

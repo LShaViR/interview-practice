@@ -44,7 +44,12 @@ function App() {
       <div className="w-screen h-screen flex justify-center pt-2">
         <div className="flex flex-col space-y-5">
           <div className="w-full flex justify-end">
-            <a className="p-2 text-white bg-gray-800">Github</a>
+            <a
+              href="https://github.com/LShaViR/interview-practice/tree/main/rubriks"
+              className="p-2 text-white bg-gray-800"
+            >
+              Github
+            </a>
           </div>
           <div className="flex justify-center space-x-4 w-full">
             <div className="flex space-x-4 ">
