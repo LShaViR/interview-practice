@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* WebKit (Chrome, Safari, Edge Chromium) */
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
